@@ -16,11 +16,11 @@ The next time you click, a new fact and image are loaded and added to the feed.
 - Implemented MVP architecture.
 - Use of Dependency Injection
 - Use of RxJava
-- 
+
 # Extra requirements:
 - The app is designed in Material Design.
 - Unit tests.
-- 
+
 # Additional task 1
 Implement the offline mode of the app. All uploaded facts are saved to the database (preferably using Room)
 and displayed from the database when there is no internet connection.
