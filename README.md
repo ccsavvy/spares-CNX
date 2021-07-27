@@ -13,7 +13,7 @@ The next time you click, a new fact and image are loaded and added to the feed.
 
 # Mandatory requirements
 - The code is written only in Java. You can't use Kotlin/Scala.
-- Implemented MVP / MVVM architecture.
+- Implemented MVP architecture.
 - Use of Dependency Injection
 - Use of RxJava
 - 
