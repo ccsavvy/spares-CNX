@@ -10,12 +10,14 @@ public class Facts {
     @SerializedName("_v")
     private Integer v;
 
-    @SerializedName("status.verified")
-    private Boolean isStatusVerified;
+    @SerializedName("status")
+    private Status status;
 
     private String user;
+    private Boolean used;
     private String text;
     private String updatedAt;
+    private String createdAt;
     private String sendDate;
     private Boolean deleted;
     private String source;
@@ -35,14 +37,6 @@ public class Facts {
 
     public void setV(Integer v) {
         this.v = v;
-    }
-
-    public Boolean getStatusVerified() {
-        return isStatusVerified;
-    }
-
-    public void setStatusVerified(Boolean statusVerified) {
-        isStatusVerified = statusVerified;
     }
 
     public String getUser() {
@@ -99,5 +93,29 @@ public class Facts {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public Boolean getUsed() {
+        return used;
+    }
+
+    public void setUsed(Boolean used) {
+        this.used = used;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 }
