@@ -35,14 +35,7 @@ press on the corresponding fact.
   ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403292.png?raw=true)
 
 2.
-  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403300.png?raw=true)
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627406500.png?raw=true)
   
 3.
-  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403320.png?raw=true)
-  
-4.
-  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403322.png?raw=true)
-  
-5.
-  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403333.png?raw=true)
-  
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627406746.png?raw=true)
