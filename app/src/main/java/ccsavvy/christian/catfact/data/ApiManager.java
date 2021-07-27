@@ -2,6 +2,7 @@ package ccsavvy.christian.catfact.data;
 
 import java.util.concurrent.TimeUnit;
 
+import ccsavvy.christian.catfact.model.Facts;
 import ccsavvy.christian.catfact.model.NinjaCatFacts;
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
@@ -32,7 +33,7 @@ public class ApiManager {
         });
         OkHttpClient client = httpClient.build();
         Retrofit mRetrofit = new Retrofit.Builder()
-                .baseUrl("https://catfact.ninja")
+                .baseUrl("https://cat-fact.herokuapp.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(client)
@@ -40,7 +41,7 @@ public class ApiManager {
         this.apiService = mRetrofit.create(ApiService.class);
     }
 
-    public Single<NinjaCatFacts> getFact() {
+    public Single<Facts> getFact() {
         return apiService.getFact();
     }
 }
