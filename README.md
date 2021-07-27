@@ -28,3 +28,21 @@ and displayed from the database when there is no internet connection.
 # Additional task 2
 Implement the ability to delete a fact from the screen and from the database. You can do this through a long
 press on the corresponding fact.
+
+## Final output (Screenshots)
+
+1.
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403292.png?raw=true)
+
+2.
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403300.png?raw=true)
+  
+3.
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403320.png?raw=true)
+  
+4.
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403322.png?raw=true)
+  
+5.
+  ![alt text](https://github.com/ccsavvy/spares-CNX/blob/main/Screenshot_1627403333.png?raw=true)
+  
