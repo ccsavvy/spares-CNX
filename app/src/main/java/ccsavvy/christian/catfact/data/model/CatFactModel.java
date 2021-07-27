@@ -12,4 +12,5 @@ public class CatFactModel {
     public byte [] cat;
     public String fact;
     public String type;
+    public String createAt;
 }
