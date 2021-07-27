@@ -9,6 +9,7 @@ import java.net.URLConnection;
 import ccsavvy.christian.catfact.data.ApiManager;
 import ccsavvy.christian.catfact.data.db.DataBaseManager;
 import ccsavvy.christian.catfact.data.model.CatFactModel;
+import ccsavvy.christian.catfact.model.Facts;
 import ccsavvy.christian.catfact.model.NinjaCatFacts;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.observers.DisposableSingleObserver;
@@ -25,13 +26,14 @@ public class MainPresenter extends MvpPresenter<MainView> {
         new ApiManager().getFact()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new DisposableSingleObserver<NinjaCatFacts>() {
+                .subscribe(new DisposableSingleObserver<Facts>() {
                     @Override
-                    public void onSuccess(NinjaCatFacts model) {
+                    public void onSuccess(Facts model) {
                         catFactModel = new CatFactModel();
                         catFactModel.id = System.nanoTime();
-                        catFactModel.fact = model.getFact();
-                        catFactModel.type = "Cat";
+                        catFactModel.fact = model.getText();
+                        catFactModel.type = model.getType();
+                        catFactModel.createAt = model.getCreatedAt();
 
                         Thread thread = new Thread(() -> {
                             try {
