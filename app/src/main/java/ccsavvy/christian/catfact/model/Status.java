@@ -1,0 +1,42 @@
+package ccsavvy.christian.catfact.model;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Status {
+
+    @SerializedName("verified")
+    @Expose
+    private Boolean verified;
+
+    @SerializedName("sentCount")
+    @Expose
+    private Integer sentCount;
+
+    @SerializedName("feedback")
+    private String feedback;
+
+    public Boolean getVerified() {
+        return verified;
+    }
+
+    public void setVerified(Boolean verified) {
+        this.verified = verified;
+    }
+
+    public Integer getSentCount() {
+        return sentCount;
+    }
+
+    public void setSentCount(Integer sentCount) {
+        this.sentCount = sentCount;
+    }
+
+    public String getStatusFeedback() {
+        return feedback;
+    }
+
+    public void setStatusFeedback(String statusFeedback) {
+        this.feedback = statusFeedback;
+    }
+}

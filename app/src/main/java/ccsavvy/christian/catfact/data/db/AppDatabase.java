@@ -1,0 +1,23 @@
+package ccsavvy.christian.catfact.data.db;
+
+import android.content.Context;
+
+import androidx.room.Database;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+
+import ccsavvy.christian.catfact.data.model.CatFactModel;
+
+@Database(entities = {CatFactModel.class}, version = 1)
+public abstract class AppDatabase extends RoomDatabase {
+
+    public abstract CatFactDao catFactDao();
+    public static AppDatabase appDatabase;
+
+    public static AppDatabase getAppDatabase(Context context) {
+        if (appDatabase == null)
+            appDatabase = Room.databaseBuilder(context, AppDatabase.class, "database-name").build();
+
+        return appDatabase;
+    }
+}

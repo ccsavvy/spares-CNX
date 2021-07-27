@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cat Fact</string>
+    <string name="welcome">Good day! If you want to know the facts about cats, press the download button on the action bar</string>
+</resources>
