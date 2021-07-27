@@ -42,8 +42,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         CatFactModel animal = facts.get(position);
         holder.itemView.setOnClickListener(v -> Toast.makeText(context, "Long press to delete", Toast.LENGTH_SHORT).show());
-        holder.textView.setText(animal.type);
-        holder.textDescription.setText(animal.fact);
+        holder.textViewName.setText(animal.type);
+        holder.textViewDescription.setText(animal.fact);
+        holder.textViewCreatedTimeAt.setText(animal.createAt);
         Glide.with(context)
                 .load(animal.cat)
                 .circleCrop()
@@ -61,16 +62,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener {
-        TextView textView;
-
-        TextView textDescription;
-
-        ImageView imageView;
+        private final TextView textViewName;
+        private final TextView textViewDescription;
+        private final TextView textViewCreatedTimeAt;
+        private final ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.tvName);
-            textDescription = itemView.findViewById(R.id.tvDescription);
+            textViewName = itemView.findViewById(R.id.tvName);
+            textViewDescription = itemView.findViewById(R.id.tvDescription);
+            textViewCreatedTimeAt = itemView.findViewById(R.id.tvNoteCreateTime);
             imageView = itemView.findViewById(R.id.ivImage);
             itemView.setOnLongClickListener(this);
         }
